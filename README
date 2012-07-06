@@ -1,1 +1,15 @@
-Test
+cut is a very simple utility that can help your perform different kinds of tasks.
+
+For example:
+You can break a file into lines and process each line individually.
+
+file, err := os.Open("file.go")
+if err != nil {
+	log.Fatal(err)
+}
+c := cut.New()
+os.Copy(c, file)
+
+for line := range c.Between("", "\n") {
+	fmt.Println(line)
+}
