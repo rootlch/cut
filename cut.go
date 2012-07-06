@@ -39,6 +39,7 @@ import (
 
 type Cut []byte
 
+//This is the first function your need to call before doing anything else.
 func New() *Cut {
 	b := make([]byte, 0)
 	h := new(Cut)
