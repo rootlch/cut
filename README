@@ -1,4 +1,4 @@
-cut is a very simple utility that can help your perform different kinds of tasks.
+cut is a very simple utility that can help your perform different kinds of tasks. cut implements the io.Writer interface so you can put data into it using the fmt package.
 
 
 For example:
