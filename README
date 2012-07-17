@@ -23,6 +23,7 @@ if err != nil {
 	log.Fatal(err)
 }
 defer resp.Body.Close()
+
 c := cut.New()
 os.Copy(c, resp.Body)
 
