@@ -1,3 +1,4 @@
+//
 //Package cut provide utilities for tokenizing data.
 package cut
 
@@ -32,9 +33,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 import (
+	"bytes"
 	"fmt"
 	"io"
-	"bytes"
 )
 
 type Cut []byte
